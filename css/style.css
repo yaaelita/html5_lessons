@@ -80,7 +80,7 @@ input, textarea {
   position: absolute;
   top: 7px;
   left: -40px;
-  background-image: url('icons/tick.png');
+  background-image: url('../img/tick.png');
   -webkit-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
@@ -525,7 +525,7 @@ details[open] summary:after {
 
 .skype:before {
   content: "";
-  background-image: url('icons/skype.png');
+  background-image: url('../img/skype.png');
   display: block;
   width: 25px;
   height: 19px;
@@ -540,7 +540,7 @@ details[open] summary:after {
 
 .tel:before {
   content: "";
-  background-image: url('icons/viber.png');
+  background-image: url('../img/viber.png');
   display: block;
   width: 25px;
   height: 19px;
@@ -555,7 +555,7 @@ details[open] summary:after {
 
 .icq:before {
   content: "";
-  background-image: url('icons/flickr.png');
+  background-image: url('../img/flickr.png');
   display: block;
   width: 25px;
   height: 19px;
@@ -570,7 +570,7 @@ details[open] summary:after {
 
 .email:before {
   content: "";
-  background-image: url('icons/mail.png');
+  background-image: url('../img/mail.png');
   display: block;
   width: 25px;
   height: 19px;
