@@ -1,82 +1,251 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Template</title>
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
  </head>
  <body>
   <div class="container">
     <header class="header">
-      <div class="header-wrapper">
-        <span class="header-title">Product name</span>
-        <ul class="list">
-          <li class="list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-          <li class="list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-          <li class="list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-          <li class="list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-        </ul>
+      <div class="wrapper">
+      	<div class="header-wrapper">
+          <span class="header-title">Product name</span>
+          <ul class="header-list">
+            <li class="header-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li class="header-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li class="header-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li class="header-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+        <img class="product-photo" src="img/img_1.jpg" alt="product-photo" width="600" height="400">
       </div>
-      <img class="product-photo" src="https://akket.com/wp-content/uploads/2017/08/Foxconn-iPhone-8-0.jpg" alt="product-photo" width="400" height="200">
     </header>
     <main>
       <article>
         <!--***ABOUT***-->
-        <section id="about" class="about">
-          <div class="product-video">
-            <video controls width="400" height="200">
-              <source src="video.mp4" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
-               Your browser does not support the video tag.
+        <section class="about">
+          <div class="wrapper">
+            <div class="about-container">
+              <span class="about-title">About your product</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptatem distinctio necessitatibus, culpa fugit eveniet provident quam. Dolore dicta eos veniam placeat, vel nisi voluptas cumque illo. Est, omnis, quae!</p>
+              <p>Architecto impedit expedita eum perspiciatis beatae autem eveniet dicta dolorem voluptates commodi error obcaecati ea dignissimos sint sequi, placeat eligendi qui deserunt et repellendus, itaque voluptas nihil totam deleniti velit.</p>   
+            </div>
+            <video class="about-video" controls width="450" height="250" poster="img/img_1.jpg">
+              <source src="video/video.mp4" type="video/mp4">
+              <source src="video/movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
             </video>
-          </div>
-          <div class="about-wrapper">
-            <span class="about-title">About you product</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptatem distinctio necessitatibus, culpa fugit eveniet provident quam. Dolore dicta eos veniam placeat, vel nisi voluptas cumque illo. Est, omnis, quae!</p>
-            <p>Architecto impedit expedita eum perspiciatis beatae autem eveniet dicta dolorem voluptates commodi error obcaecati ea dignissimos sint sequi, placeat eligendi qui deserunt et repellendus, itaque voluptas nihil totam deleniti velit.</p>
           </div>
         </section>   
         <!--//ABOUT-->
         
         <!--***DIGNITY***-->
-        <section id="dignity" class="dignity">
+        <section class="dignity">
           <article class="dignity-article"> 
-            <span class="dignity-title">Dignity and pluses product</span>
-             <div class="dignity-list">
-               <details>
-                 <summary>Delectus dolorem vero quae beatae</summary>
-                 <span class="summary">Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</span>
-               </details>
-               <details>
-                 <summary>Reprehenderit aliquam, nemo cum velit ratione perferent</summary>
-                 <span class="summary">Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, </span>
-               </details>
-               <details>
-                 <summary>Delectus dolorem vero quae beatae</summary>
-                 <span class="summary">Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</span>
-               </details>
+            <span class="title">Dignity and pluses product</span>
+              <div class="dignity">
+                <div class="dignity-list">
+                  <details>
+                   <summary>Delectus dolorem vero quae beatae</summary>
+                   <span class="summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</span>
+                 </details>
+                 <details>
+                   <summary>Reprehenderit aliquam, nemo cum velit ratione perferent</summary>
+                   <span class="summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</span>
+                 </details>
+                 <details>
+                   <summary>Delectus dolorem vero quae beatae</summary>
+                   <span class="summary">Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</span>
+                 </details>
+               </div>
+               <div class="dignity-list">
+                <details>
+                  <summary>Delectus dolorem vero quae beatae</summary>
+                  <span class="summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</span>
+                </details>
+                <details>
+                  <summary>Reprehenderit aliquam, nemo cum velit ratione perferent</summary>
+                  <span class="summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</span>
+                </details>
+                <details>
+                  <summary>Delectus dolorem vero quae beatae</summary>
+                  <span class="summary">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</span>
+                </details>
+              </div>
             </div>
-            <div class="dignity-list">
-              <details>
-                 <summary>Delectus dolorem vero quae beatae</summary>
-                 <span class="summary">Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</span>
-               </details>
-               <details>
-                 <summary>Reprehenderit aliquam, nemo cum velit ratione perferent</summary>
-                 <span class="summary">Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, </span>
-               </details>
-               <details>
-                 <summary>Delectus dolorem vero quae beatae</summary>
-                 <span class="summary">Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</span>
-               </details>
-            </div>
-            </article>
+          </article>
         </section>
        <!-- //DIGNITY -->
+        
+       <!--***SCREENSHOTS***-->
+        <section class="screenshots">
+          <article class="screenshots-article"> 
+            <span class="title">Screenshots</span>
+            <div class="wrapper">
+              <figure class="screenshot-item">
+                <img class="img-screenshot" src="img/screen_1.jpg" alt="screenshot_1" width="200" height="150">
+                <figcapture>
+                 <span>The description for the image</span>
+                 <p>Reprehenderit aliquam, nemo cum velit ratione perferent.Reprehenderit aliquam, nemo cum velit ratione perferent.Reprehenderit aliquam, nemo cum velit ratione perferent</p>
+               </figcapture>
+             </figure>
+             <figure class="screenshot-item">
+               <img class="img-screenshot" src="img/screen_2.jpg" alt="screenshot_2" width="200" height="150">
+               <figcapture>
+                 <span>The description for the image</span>
+                 <p>Reprehenderit aliquam, nemo cum velit ratione perferent.Reprehenderit aliquam, nemo cum velit ratione perferent.Reprehenderit aliquam, nemo cum velit ratione perferent</p>
+               </figcapture>
+            </figure>
+              </div>
+            <div class="wrapper">
+            <figure class="screenshot-item">
+               <img class="img-screenshot" src="img/screen_3.jpg" alt="screenshot_3" width="200" height="150">
+               <figcapture>
+                 <span>The description for the image</span>
+                 <p>Reprehenderit aliquam, nemo cum velit ratione perferent.Reprehenderit aliquam, nemo cum velit ratione perferent.Reprehenderit aliquam, nemo cum velit ratione perferent</p>
+               </figcapture>
+            </figure>
+            <figure class="screenshot-item">
+               <img class="img-screenshot" src="img/screen_4.jpg" alt="screenshot_4" width="200" height="150">
+               <figcapture>
+                 <span>The description for the image</span>
+                 <p>Reprehenderit aliquam, nemo cum velit ratione perferent.Reprehenderit aliquam, nemo cum velit ratione perferent.Reprehenderit aliquam, nemo cum velit ratione perferent</p>
+               </figcapture>
+            </figure>
+              </div>
+            </article>
+        </section>
+       <!-- //screenshots -->
+        
+       <!--***REVIEWS***-->
+        <section class="reviews">
+          <span class="title">Reviews</span>
+          <div class="wrapper">
+              <div class="review-item">
+                <a href="#" target="_blank"><img class="review-avatar" src="img/avatar.jpg" alt="avatar"></a>
+                  <div class="review-item-box">
+                    <p class="review-item-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+                    <span class="review-item-autor">Lourens S.</span>
+                  </div>
+               </div> 
+               <div class="review-item">
+                <a href="#" target="_blank"><img class="review-avatar" src="img/avatar.jpg" alt="avatar"></a>
+                  <div class="review-item-box">
+                    <p class="review-item-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+                    <span class="review-item-autor">Lourens S.</span>
+                  </div>
+               </div>   
+               <div class="review-item">
+                <a href="#" target="_blank"><img class="review-avatar" src="img/avatar.jpg" alt="avatar"></a>
+                  <div class="review-item-box">
+                    <p class="review-item-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+                    <span class="review-item-autor">Lourens S.</span>
+                  </div>
+               </div> 
+               <div class="review-item">
+                <a href="#" target="_blank"><img class="review-avatar" src="img/avatar.jpg" alt="avatar"></a>
+                  <div class="review-item-box">
+                    <p class="review-item-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+                    <span class="review-item-autor">Lourens S.</span>
+                  </div>
+               </div> 
+          </div>
+        </section>
+       <!-- //reviews -->
+        
+       <!--***PRICES***-->
+        <section class="prices">
+          <span class="title">Buy it now</span>
+          <div class="wrapper">
+            <div class="prices-item">
+              <p class="prices-item-name">Standart</p>
+              <span class="price">$100</span>
+              <ol class="price-options">
+                <li>Porro officia cumque sint deleniti;</li>
+                <li>Тemo facere rem vitae odit;</li>
+                <li>Cum odio, iste quia doloribus autem;</li>
+                <li>Тemo facere rem vitae odit;</li>
+              </ol>
+              <a href="#" class="btn-buy"><span class="btn-txt">Buy</span></a>
+            </div>
+            <div class="prices-item">
+              <p class="prices-item-name">Premium</p>
+              <span class="price">$150</span>
+              <ol class="price-options">
+                <li>Porro officia cumque sint deleniti;</li>
+                <li>Тemo facere rem vitae odit;</li>
+                <li>Cum odio, iste quia doloribus autem;</li>
+                <li>Porro officia cumque sint deleniti;</li>
+                <li>Тemo facere rem vitae odit;</li>
+                <li>Тemo facere rem vitae odit;</li>
+                <li>Тemo facere rem vitae odit;</li>
+                <li>Тemo facere rem vitae odit;</li>
+              </ol>
+             <a href="#" class="btn-buy"><span class="btn-txt">Buy</span></a>
+            </div>
+            <div class="prices-item">
+              <p class="prices-item-name">Lux</p>
+              <span class="price">$200</span>
+              <ol class="price-options">
+                <li>Porro officia cumque sint deleniti;</li>
+                <li>Тemo facere rem vitae odit;</li>
+                <li>Cum odio, iste quia doloribus autem;</li>
+                <li>Porro officia cumque sint deleniti;</li>
+                <li>Тemo facere rem vitae odit;</li>
+                <li>Cum odio, iste quia doloribus autem;</li>
+                <li>Porro officia cumque sint deleniti;</li>
+                <li>Porro officia cumque sint deleniti;</li>
+                <li>Porro officia cumque sint deleniti;</li>
+                <li>Porro officia cumque sint deleniti;</li>
+                <li>Porro officia cumque sint deleniti;</li>
+                <li>Тemo facere rem vitae odit;</li>
+              </ol>
+              <a href="#" class="btn-buy"><span class="btn-txt">Buy</span></a>
+            </div>
+          </div>
+        </section>
+       <!-- //prices -->    
+
+       <!--***CONTACTS***-->
+        <section class="contacts">
+          <span class="contacts-title">Contacts</span>
+          <div class="wrapper">
+            <form class="contacts-form">
+              <input id="name" type="text" class="name-form" placeholder="Your name:">
+              <input id="email" type="email" class="email-form" placeholder="Your email:">
+              <textarea id="message" class="message-form" rows="5" placeholder="Your message:"></textarea>
+              <input class="btn-send-message" type="submit" value="Send"></input>
+            </form>
+            <div class="contacts-list">
+              <span class="skype">your skype</span>
+              <span class="tel">your tel</span>
+              <span class="icq">your isq</span>
+              <span class="email">your mail</span>
+              <div class="socials">
+                <a href="#"><img class="social" src="img/fb.png" width=27px height=27px></a>
+                <a href="#"><img class="social" src="img/whatsapp.png" width=27px height=27px></a>
+                <a href="#"><img class="social" src="img/linkedin.png" width=27px height=27px></a>
+                <a href="#"><img class="social" src="img/youtube.png" width=27px height=27px></a>
+                <a href="#">
+                  <img class="social" src="img/twitter.png" width=27px height=27px>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+       <!-- //contacts -->         
       </article> 
-    </main>    
+    
+      <!--***FOOTER***-->
+   <footer>
+     <span class="footer-txt">Copyright © 2019 Product name</span>
+   </footer>
+   <!-- //footer -->  
+   
+    </main>
   </div>
  </body>
 </html>
