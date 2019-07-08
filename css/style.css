@@ -5,6 +5,11 @@ body {
   background-color: white;
 }
 
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -17,9 +22,8 @@ input, textarea {
   display: flex;
   display:-webkit-flex;
   flex-wrap: wrap;
-  /* float: left; */
   box-sizing: border-box;
-  margin: 20px;
+  padding: 0 20px 0 0;
   justify-content: space-between;
 }
 
@@ -29,7 +33,7 @@ input, textarea {
   font-size: 30px;
   font-family: "Arial";
   font-weight: 400;
-  padding: 30px 0 30px 20px;
+  padding: 0px 0 30px 20px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -53,7 +57,6 @@ input, textarea {
   font-size: 60px;
   font-weight: 400;
   text-align: left;
-  padding: 30px 0 30px 20px;
 }
 
 .header-list {
@@ -80,7 +83,7 @@ input, textarea {
   position: absolute;
   top: 7px;
   left: -40px;
-  background-image: url('icons/tick.png');
+  background-image: url('../img/tick.png');
   -webkit-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
@@ -90,9 +93,9 @@ input, textarea {
 .product-photo {
   display: block;
   width: 40%;
-  background-color: #445161;
-  width: 550px;
-  height: 300px;
+  background-color: #fff;
+  width: 469px;
+  height: 214px;
   float: right;
 }
 
@@ -107,7 +110,7 @@ input, textarea {
   font-size: 30px;
   font-family: "Arial";
   font-weight: 400;
-  padding: 30px 0 30px 0;
+  padding: 0px 0 30px 0;
   box-sizing: border-box;
   text-align: left;
 }
@@ -130,8 +133,8 @@ input, textarea {
   display: block;
   width: 40%;
   background-color: #445161;
-  width: 400px;
-  height: 200px;
+  width: 430px;
+  height: 245px;
   float: right;
   margin: 50px;
 }
@@ -188,7 +191,6 @@ input, textarea {
   content: "+";
   display: block;
   width: 32px;
-  /* height: 32px; */
   background-color: #445161;
   color: white;
   font-size: 28px;
@@ -242,9 +244,19 @@ details[open] summary:after {
   padding: 50px;
 }
 
+.screenshot-title {
+  font-size: 16px;
+}
+
+.screenshot-desc {
+  font-size: 16px;
+}
+
 .screenshot-item {
-  width: 40%;
+  width: 48%;
+  padding: 0 20px 20px 0px;
   display: flex;
+  margin: 0;
 }
 
 .img-screenshot {
@@ -326,6 +338,7 @@ details[open] summary:after {
 }
 
 .prices-item {
+  display: block;
   width: 30%;
   border: 2px solid #445161;
   box-sizing: border-box;
@@ -351,12 +364,17 @@ details[open] summary:after {
   padding: 10px;
 }
 
+.btn-container {
+  text-align: center;
+}
+
 .btn-buy {
-  display: block;
-  border: 1px solid #445161; 
   display: flex;
-  display: inline-flex;
+  display: inline-flex; 
+  flex-position: center;
+  border: 1px solid #445161; 
   width: 98%;
+  text-align: center;
   min-height: 25px;
   text-decoration: none; 
   text-transform: uppercase;
@@ -393,6 +411,7 @@ details[open] summary:after {
 }
 
 .prices-item-name {
+  display: block;
   text-align: center;
   font-size: 20px;
   margin: 5px;
@@ -404,7 +423,6 @@ details[open] summary:after {
   line-height: 30px;
   font-size: 25px;
   background-color: white;
-  /* width: 100%; */
   min-height: 30px;
 }
 
@@ -422,11 +440,19 @@ details[open] summary:after {
   line-height: 2.2;
 }
 
+.contact-wrapper {
+  display: flex;
+  display:-webkit-flex;
+  box-sizing: border-box;
+  padding: 0 20px 0 0;
+  justify-content: center;
+}
+
 .contacts-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
   margin: 0 20px 20px 0;
 }
 
@@ -434,14 +460,14 @@ details[open] summary:after {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 40%; 
+  width: 20%; 
   color:  #fff;
   font-family: Arial;
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
   list-style-type: none;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 30px;
 }
 
 .name-form {
@@ -525,7 +551,7 @@ details[open] summary:after {
 
 .skype:before {
   content: "";
-  background-image: url('icons/skype.png');
+  background-image: url('../img/skype.png');
   display: block;
   width: 25px;
   height: 19px;
@@ -540,7 +566,7 @@ details[open] summary:after {
 
 .tel:before {
   content: "";
-  background-image: url('icons/viber.png');
+  background-image: url('../img/viber.png');
   display: block;
   width: 25px;
   height: 19px;
@@ -555,7 +581,7 @@ details[open] summary:after {
 
 .icq:before {
   content: "";
-  background-image: url('icons/flickr.png');
+  background-image: url('../img/flickr.png');
   display: block;
   width: 25px;
   height: 19px;
@@ -570,7 +596,7 @@ details[open] summary:after {
 
 .email:before {
   content: "";
-  background-image: url('icons/mail.png');
+  background-image: url('../img/mail.png');
   display: block;
   width: 25px;
   height: 19px;
@@ -584,14 +610,67 @@ details[open] summary:after {
 }
 
 .socials {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
   padding: 10px 0 0 0;
-  text-decoration: none;
+  text-decoration: none;  
   outline: none;
 }
 
 .social {
   width: 27px;
   height: 27px;
+}
+
+.facebook {
+  display: block;
+  background: url('../img/fb.png');
+  width: 27px;
+  height: 27px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.whatsapp {
+  display: block;
+  background-image: url('../img/whatsapp.png');
+  width: 27px;
+  height: 27px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.linkedin {
+  display: block;
+  background-image: url('../img/linkedin.png');
+  width: 27px;
+  height: 27px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.youtube {
+  display: block;
+  background-image: url('../img/youtube.png');
+  width: 27px;
+  height: 27px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitter {
+  display: block;
+  background-image: url('../img/twitter.png');
+  width: 27px;
+  height: 27px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-txt {
